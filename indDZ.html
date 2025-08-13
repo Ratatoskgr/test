@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+<title>Doc</title>
+<link rel="stylesheet" href="styleDZ.css">
+</head>
+<body>
+<div class="wrapper">
+    <form id="exampleForm">
+        <h2 class="form__title">Demo</h2>
+
+        
+        <div class="form__group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+        <div class="form__group">
+            <label for="repeatPassword">Repeat password</label>
+            <input type="password" id="repeatPassword" placeholder="Repeat password">
+        </div>
+
+      
+        <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter message"></textarea>
+        </div>
+
+       
+        <div class="form__group">
+            <label for="favoriteAnimal">Select your favorite animal</label>
+            <select id="favoriteAnimal">
+                <option value="">--Please select an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="bird">Bird</option>
+                <option value="fish">Fish</option>
+            </select>
+        </div>
+
+      
+        <div class="form__group">
+            <p>You should give us your consent</p>
+            <label><input type="checkbox" id="consent" required> I agree to provide the information</label>
+        </div>
+        <div class="form__group">
+            <p>Please select at least 2 option</p>
+            <label><input type="checkbox" name="newsletter" value="email" required> I'd like to receive news by email</label>
+            <label><input type="checkbox" name="newsletter" value="post" required> I'd like to receive news by post</label>
+            <label><input type="checkbox" name="newsletter" value="text" required> I'd like to receive news by text phone</label>
+        </div>
+
+        
+        <div class="form__group">
+            <p>Please select the preferred way for communication</p>
+            <label><input type="radio" name="communication" value="email" required> Email</label>
+            <label><input type="radio" name="communication" value="text" required> Text message</label>
+        </div>
+
+        
+        <div class="form__group">
+            <label for="anyNumber">Input any number</label>
+            <input type="number" id="anyNumber" placeholder="Input any number">
+        </div>
+        <div class="form__group">
+            <label for="integerNumber">Input an integer number</label>
+            <input type="number" id="integerNumber" placeholder="Input an integer number">
+        </div>
+        <div class="form__group">
+            <label for="between10and20">Input a number between 10 and 20</label>
+            <input type="number" id="between10and20" placeholder="Input a number between 10 and 20" min="10" max="20">
+        </div>
+
+       
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="button" id="showPassBtn">Show password</button>
+    </form>
+</div>
+
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<script src="indDZ.js"></script>
+</body>
+</html>
